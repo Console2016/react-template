@@ -1,0 +1,14 @@
+{
+  "path-autocomplete.pathMappings": {
+    "@": "${folder}/src", // alias for /test
+    "@style": "${folder}/src/common/style", // the absolute root folder is now /src,
+    "@utils": "${folder}/src/common/utils" // the absolute root folder is now /src,
+  },
+  "path-autocomplete.extensionOnImport": true,
+  "typescript.tsserver.pluginPaths": ["typescript-plugin-css-modules"],
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true
+  // "typescript.suggest.paths": false,
+}
