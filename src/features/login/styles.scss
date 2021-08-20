@@ -1,0 +1,145 @@
+.view {
+    height: 100%;
+    width: 100%;
+    display: flex;
+
+    .bg {
+        display: flex;
+        width: 50%;
+        height: 100%;
+        flex-direction: column;
+
+        .logo {
+            width: 30rem;
+            height: 3rem;
+            padding: 1.5rem 2.08rem;
+            box-sizing: content-box;
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+
+            img {
+                height: 100%;
+                margin-right: 5px;
+            }
+
+            span {
+                font-size: 1.3rem;
+            }
+        }
+
+        .mainBg {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            img {
+                height: 39.11rem;
+            }
+
+            .mainImg {
+                background: url(./images/bigdata.png) center center no-repeat;
+                background-size: contain;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 39.11rem;
+                width: 39.52rem;
+
+                .title {
+                    color: #565656;
+                    font-weight: bold;
+                    font-size: 5rem;
+                    white-space: normal;
+                    word-break: break-all;
+                    line-height: 1.1;
+                    text-align: center;
+                    user-select: none;
+                }
+            }
+        }
+    }
+
+    .tabsContain {
+        //float: left;
+        position: relative;
+        //width: 6rem;
+        height: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .tabsContext {
+            position: relative;
+            width: 32.29rem;
+            height: 26.04rem;
+            background-color: #ffffff;
+            box-shadow: 0rem 0.94rem 3.13rem 0rem rgba(140, 140, 140, 0.2);
+            border-radius: 0.42rem;
+            margin-left: 7rem;
+            padding: 2.86rem 4.69rem;
+
+            h1 {
+                font-size: 1.56rem;
+                font-weight: bold;
+                margin-left: 2.03rem;
+                margin-bottom: 2.4rem;
+            }
+
+            :global(.ant-input-prefix) {
+                color: gray;
+                left: 1rem;
+            }
+
+            .userName,
+            .password,
+            .verification {
+                width: 100%;
+                height: 2.19rem;
+                color: blueviolet;
+                margin-bottom: 2.08rem;
+                font-size: 0.94rem;
+
+                input {
+                    font-size: 0.94rem;
+                    padding-left: 0.2rem;
+                }
+            }
+
+            .password {
+                margin-bottom: 1.15rem;
+            }
+
+            .verification :global(.ant-input-suffix) {
+                right: 0;
+            }
+
+            .forget {
+                color: gray;
+                font-size: 0.83rem;
+                margin-bottom: 2.08rem;
+                cursor: pointer;
+            }
+
+            .loginBut {
+                height: 2.19rem;
+                margin-bottom: 2rem;
+                font-size: 0.83rem;
+            }
+
+            .register {
+                color: gray;
+                text-align: center;
+                font-size: 0.83rem;
+
+                a {
+                    margin-left: 1rem;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
